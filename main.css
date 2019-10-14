@@ -1,9 +1,10 @@
 main > div {
-  border: 0.5px solid #DDD;
+  border: 0.5px solid #ddd;
   border-radius: 15px;
 }
 
-header h1, header p {
+header h1,
+header p {
   margin: 0;
 }
 
@@ -11,13 +12,15 @@ header h1, header p {
   position: relative;
 }
 
-.delete-button, .edit-button {
+.delete-button,
+.edit-button {
   position: absolute;
   right: 0;
   margin: 5px 5px;
+  margin-bottom: 5px;
 }
 
-.delete-button{
+.delete-button {
   bottom: 0;
 }
 

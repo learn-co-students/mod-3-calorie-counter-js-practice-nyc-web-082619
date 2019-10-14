@@ -40,13 +40,14 @@ class Api::V1::CalorieEntriesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_api_v1_calorie_entry
-      @api_v1_calorie_entry = Api::V1::CalorieEntry.find(params[:id])
-    end
 
-    # Only allow a trusted parameter "white list" through.
-    def api_v1_calorie_entry_params
-      params.require(:api_v1_calorie_entry).permit(:calorie, :note)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_api_v1_calorie_entry
+    @api_v1_calorie_entry = Api::V1::CalorieEntry.find(params[:id])
+  end
+
+  # Only allow a trusted parameter "white list" through.
+  def api_v1_calorie_entry_params
+    params.require(:api_v1_calorie_entry).permit(:calorie, :note)
+  end
 end
